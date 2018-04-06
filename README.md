@@ -23,11 +23,11 @@ The goals / steps of this project are the following:
 [image4]: ./writeup_dir/orig_image.png "Original Image"
 [image5]: ./writeup_dir/rot_image1.png "Rotated Image1"
 [image6]: ./writeup_dir/rot_image2.png "Rotated Image2"
-[image7]: ./web_examples/240px-Zeichen_274-60_-_Zulässige_Höchstgeschwindigkeit,_StVO_2017.jpeg
-[image8]: ./web_examples/240px-Zeichen_276_-_Überholverbot_für_Kraftfahrzeuge_aller_Art,_StVO_1992.jpeg
-[image9]: ./web_examples/240px-Zeichen_301_-_Vorfahrt,_StVO_1970.svg.jpeg
-[image10]: ./web_examples/Zeichen_103-10_-_Kurve_(links),_StVO_1992.svg.jpeg
-[image11]: ./web_examples/Zeichen_267_-_Verbot_der_Einfahrt,_StVO_1970.jpeg
+[image7]: ./web_examples/60kmph.jpeg
+[image8]: ./web_examples/no_passing.jpeg
+[image9]: ./web_examples/no_entry.jpeg
+[image10]: ./web_examples/right_of_way_at_next_intersection.jpeg
+[image11]: ./web_examples/dangerous_curve_to_left.jpeg
 [image12]: ./writeup_dir/softmax1.png
 [image13]: ./writeup_dir/softmax2.png
 [image14]: ./writeup_dir/softmax3.png
@@ -177,11 +177,20 @@ The code for making predictions on my final model is located in the 16-18 cells 
 
 For the first image, model is quite sure that this is 60km/hr speed limit sign, as its probability is 0.997, while next 4 maximum probabilities are 0.001 or less. The same trend is seen for 3rd, 4th and 5th images. However, for the 2nd image, the model is relatively less sure of its prediction, even though its prediction is correct, maximum probability being 0.9, while second highest probability is 0.09. The top 5 softmax probabilities for predictions of each image is shown below, in the same order as above. 
 
-![alt text][image7]![alt text][image12]
-![alt text][image8]![alt text][image13]
-![alt text][image9]![alt text][image14]
-![alt text][image10]![alt text][image15]
-![alt text][image11]![alt text][image16]
+![alt text][image7]  
+![alt text][image12]  
+
+![alt text][image8]  
+![alt text][image13]  
+
+![alt text][image9]  
+![alt text][image14]  
+
+![alt text][image10]  
+![alt text][image15]  
+
+![alt text][image11]  
+![alt text][image16]  
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
